@@ -3,3 +3,6 @@ pandas
 altair
 vega_datasets
 matplotlib
+tqdm
+altair
+vega_datasets

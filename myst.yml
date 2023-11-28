@@ -15,7 +15,10 @@ project:
   github: stevejpurves/simple-test
   exports:
     - format: meca
-  jupyter: 'binder'
+  jupyter:
+    server:
+      url: http://localhost:8888
+      token: test-secret
 site:
   template: book-theme
   title: Simple Site
