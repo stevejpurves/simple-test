@@ -12,7 +12,7 @@ project:
       corresponding: true
       email: steve@curvenote.com
       orcid: 0000-0002-0760-5497
-  github: curvenote/binder-base
+  github: stevejpurves/simple-test
   exports:
     - format: meca
   jupyter: 'binder'
