@@ -1,0 +1,27 @@
+# See docs at: https://myst-tools.org/docs/mystjs/frontmatter
+version: 1
+project:
+  # title:
+  # description:
+  keywords: []
+  authors:
+    - name: Steve Purves
+      affiliations:
+        - Curvenote
+        - Executable Books
+      corresponding: true
+      email: steve@curvenote.com
+      orcid: 0000-0002-0760-5497
+  github: curvenote/binder-base
+  exports:
+    - format: meca
+  jupyter: 'binder'
+site:
+  template: book-theme
+  title: Simple Site
+  # logo:
+  nav: []
+  actions:
+    - title: Learn More
+      url: https://myst-tools.org/docs/mystjs
+  domains: []
