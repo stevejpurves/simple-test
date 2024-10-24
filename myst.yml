@@ -1,30 +1,62 @@
-# See docs at: https://myst-tools.org/docs/mystjs/frontmatter
 version: 1
+site:
+  title: Simplest (Site)
+  description: Site description description description description description description
+  nav: []
+  domains:
+    - stevejpurves-simplest.curve.space
+  template: book-theme
 project:
-  # title:
-  # description:
-  keywords: []
+  title: Simplest (Project)
+  description: Project description description description description description
+  plugins:
+    - lorem.mjs
   authors:
-    - name: Steve Purves
+    - id: contributors-myst-generated-uid-0
+      nameParsed:
+        literal: Steve Purves (Project)
+        given: Steve Purves
+        family: (Project)
+      name: Steve Purves (Project)
+      orcid: 0000-0002-0760-5497
+      corresponding: true
+      email: steve@curvenote.com
       affiliations:
         - Curvenote
         - Executable Books
-      corresponding: true
-      email: steve@curvenote.com
-      orcid: 0000-0002-0760-5497
-  github: stevejpurves/simple-test
+      roles:
+        - Investigation
+  keywords:
+    - jupyter
+    - simple
+  affiliations:
+    - id: Curvenote
+      name: Curvenote
+    - id: Executable Books
+      name: Executable Books
+  date: 2020-02-07
+  thumbnail: project-thumb.png
+  id: scipy-simplest-1
+  banner: banner.png
   exports:
     - format: meca
+  requirements:
+    - requirements.txt
+  resources:
+    - data/**
+    - notebooks/data/**
+  toc:
+    - file: paper
+    - file: embed
+    - file: embeds
+    - file: just-widgets-figure
+    - file: paper-all
+    - file: simples
+    - file: widget
+    - file: notebooks/relative-path-test.ipynb
   jupyter:
-    server:
-      url: http://localhost:8888
-      token: test-secret
-site:
-  template: book-theme
-  title: Simple Site
-  # logo:
-  nav: []
-  actions:
-    - title: Learn More
-      url: https://myst-tools.org/docs/mystjs
-  domains: []
+    true
+    # server:
+    #   url: http://localhost:8888
+    #   token: steve-token
+  github: https://github.com/stevejpurves/simple-test

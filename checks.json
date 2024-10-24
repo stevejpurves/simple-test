@@ -1,0 +1,164 @@
+[
+  {
+    "id": "abstract-exists",
+    "title": "Abstract Exists",
+    "purpose": "ensure abstract exists",
+    "tags": [
+      "frontmatter",
+      "abstract"
+    ],
+    "status": "fail",
+    "message": "No abstract found",
+    "file": "/Users/stevejpurves/dev/demos/simple/paper.md",
+    "help": "Add an abstract"
+  },
+  {
+    "id": "abstract-length",
+    "title": "Abstract Length",
+    "purpose": "ensure abstract has the correct length",
+    "tags": [
+      "frontmatter",
+      "abstract"
+    ],
+    "options": [
+      {
+        "id": "max",
+        "title": "Maximum word count for abstract",
+        "type": "number",
+        "default": 400
+      }
+    ],
+    "status": "error",
+    "message": "No abstract found",
+    "file": "/Users/stevejpurves/dev/demos/simple/paper.md",
+    "cause": "abstract-exists",
+    "help": "Abstract should be less than 400 words"
+  },
+  {
+    "id": "authors-exist",
+    "title": "Authors",
+    "purpose": "ensure authors are defined",
+    "tags": [
+      "frontmatter",
+      "authors"
+    ],
+    "status": "pass",
+    "message": "Found 1 authors",
+    "file": "/Users/stevejpurves/dev/demos/simple/myst.yml",
+    "nice": "Authors found 👋"
+  },
+  {
+    "id": "authors-corresponding",
+    "title": "Corresponding Author",
+    "purpose": "ensure there is a corresponding author",
+    "tags": [
+      "frontmatter",
+      "authors"
+    ],
+    "status": "pass",
+    "message": "Steve Purves (Project) provided an email: <steve@curvenote.com>",
+    "file": "/Users/stevejpurves/dev/demos/simple/myst.yml",
+    "nice": "Corresponding author is set 📧"
+  },
+  {
+    "id": "authors-have-affiliations",
+    "title": "Author Affiliations",
+    "purpose": "ensure each author has an affiliation",
+    "tags": [
+      "frontmatter",
+      "authors"
+    ],
+    "status": "pass",
+    "message": "Steve Purves (Project) has an affiliation",
+    "file": "/Users/stevejpurves/dev/demos/simple/myst.yml",
+    "nice": "All authors have affiliations 🏫"
+  },
+  {
+    "id": "authors-have-orcid",
+    "title": "ORCID",
+    "purpose": "ensure each author has an ORCID",
+    "tags": [
+      "frontmatter",
+      "authors"
+    ],
+    "status": "pass",
+    "message": "Steve Purves (Project) has an ORCID",
+    "file": "/Users/stevejpurves/dev/demos/simple/myst.yml",
+    "nice": "Thanks for adding ORCIDs, robots love orchids 🤖💚🌸"
+  },
+  {
+    "id": "authors-have-credit-roles",
+    "title": "CRediT Roles",
+    "purpose": "ensure each author has one or more CRediT roles",
+    "tags": [
+      "frontmatter",
+      "authors"
+    ],
+    "status": "fail",
+    "message": "Steve Purves (Project) does not have any CRediT Roles",
+    "file": "/Users/stevejpurves/dev/demos/simple/myst.yml",
+    "help": "Add CRediT roles to each author"
+  },
+  {
+    "id": "data-availability-exists",
+    "title": "Data Availability Statement",
+    "purpose": "ensure data availability statement exists",
+    "tags": [
+      "frontmatter",
+      "data-availability"
+    ],
+    "status": "fail",
+    "message": "No availability statement found",
+    "file": "/Users/stevejpurves/dev/demos/simple/paper.md",
+    "help": "Add a data availability statement"
+  },
+  {
+    "id": "keywords-defined",
+    "title": "Keywords",
+    "purpose": "ensure keywords exist",
+    "tags": [
+      "frontmatter",
+      "keywords"
+    ],
+    "status": "fail",
+    "message": "No keywords found",
+    "file": "/Users/stevejpurves/dev/demos/simple/myst.yml",
+    "help": "Add keywords to your project"
+  },
+  {
+    "id": "keywords-length",
+    "title": "Number of Keywords",
+    "purpose": "ensure the right number of keywords exist",
+    "options": [
+      {
+        "id": "max",
+        "title": "Maximum number of keywords",
+        "type": "number",
+        "default": 5
+      }
+    ],
+    "tags": [
+      "frontmatter",
+      "keywords"
+    ],
+    "status": "error",
+    "message": "No keywords found",
+    "file": "/Users/stevejpurves/dev/demos/simple/myst.yml",
+    "cause": "keywords-defined",
+    "help": "Include up to 5 keywords to your project"
+  },
+  {
+    "id": "keywords-unique",
+    "title": "Unique Keywords",
+    "purpose": "ensure the keywords are unique",
+    "tags": [
+      "frontmatter",
+      "keywords"
+    ],
+    "status": "error",
+    "message": "No keywords found",
+    "file": "/Users/stevejpurves/dev/demos/simple/myst.yml",
+    "cause": "keywords-defined",
+    "help": "Ensure each keyword is unique"
+  }
+]
